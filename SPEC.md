@@ -99,12 +99,13 @@ The Personal theme is not bound by the brief at all.
 - `npm run tokens`: 0 contrast failures across both themes and both modes (text, muted text, accent, status colours on `bg` and `surface`, and `on-accent` on `accent`).
 - `npm run typecheck` and `npm run build` pass.
 - Style guide opened in a browser: Work light and dark, Personal light and dark, at 1360px and 375px wide. No console errors, no sideways overflow.
+- Installed from GitHub into an empty project (`npm install github:caleb157/hq-ui`), rendered components with React 19 in plain Node, and resolved every CSS and JSON export. This caught extensionless imports in `dist/`, fixed by using `.js` extensions in `src/index.ts`.
 
 ## Not verified, and open questions
 
 1. **Installing in PDHQ through Lovable.** Decided 2026-11-12: the repo is public at `github.com/caleb157/hq-ui`, so Lovable and Vercel can install it with no credentials. Install with `npm install github:caleb157/hq-ui`. Because the repo is public, it must never hold real customer names, order numbers, prices or margins. Whether Lovable's own build accepts a git dependency has not been tried.
 2. **PDHQ's theme menu.** The local SuperQuoter copy is from April 2026 and has no Q mode, Parker mode or Dial-Up theme. `css/shadcn.css` is written against the standard Tailwind 4 shadcn variable names and has not been tried in the live app. The next session needs the current PDHQ repo checked out, and should read how PR #97 (Dial-Up) registered its theme before adding Work the same way.
-3. **Nothing has been installed into a consuming app yet.** The package has only been exercised by its own style guide.
+3. **Nothing has been installed into a real consuming app yet.** It has been exercised by its own style guide and a scratch install test only.
 4. **Pinning.** Apps install from the `main` branch. Tag releases (`v0.1.0`) and install `github:caleb157/hq-ui#v0.1.0` once more than one app depends on it, so a change here cannot surprise an app.
 5. **Fonts in Next apps.** `home-hq` should load Inter with `next/font` and set `--hq-font-ui`, rather than import `fonts.css`.
 6. **Recharts versions.** Tested with Recharts 3.10. PDHQ had 3.8 in April.
