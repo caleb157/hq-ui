@@ -1,0 +1,40 @@
+/* shadcn/ui bridge for apps that already have shadcn components (PDHQ).
+   Maps shadcn's variable names onto hq-ui tokens, so picking the Work or
+   Personal theme reskins existing screens without touching each component.
+   Assumes the Tailwind 4 shadcn setup, where these variables hold full colours.
+   NOT YET CHECKED against the live PDHQ repo. See SPEC.md, open questions. */
+[data-theme="work"],
+[data-theme="personal"] {
+  --background: var(--hq-bg);
+  --foreground: var(--hq-text);
+  --card: var(--hq-bg);
+  --card-foreground: var(--hq-text);
+  --popover: var(--hq-bg);
+  --popover-foreground: var(--hq-text);
+  --primary: var(--hq-accent);
+  --primary-foreground: var(--hq-on-accent);
+  --secondary: var(--hq-surface);
+  --secondary-foreground: var(--hq-text);
+  --muted: var(--hq-surface);
+  --muted-foreground: var(--hq-text-muted);
+  --accent: var(--hq-accent-wash);
+  --accent-foreground: var(--hq-text);
+  --destructive: var(--hq-danger);
+  --border: var(--hq-line);
+  --input: var(--hq-line-strong);
+  --ring: var(--hq-focus);
+  --radius: var(--hq-radius-card);
+  --chart-1: var(--hq-chart-1);
+  --chart-2: var(--hq-chart-2);
+  --chart-3: var(--hq-chart-3);
+  --chart-4: var(--hq-chart-4);
+  --chart-5: var(--hq-chart-5);
+  --sidebar: var(--hq-bg);
+  --sidebar-foreground: var(--hq-text);
+  --sidebar-primary: var(--hq-accent);
+  --sidebar-primary-foreground: var(--hq-on-accent);
+  --sidebar-accent: var(--hq-accent-wash);
+  --sidebar-accent-foreground: var(--hq-text);
+  --sidebar-border: var(--hq-line);
+  --sidebar-ring: var(--hq-focus);
+}

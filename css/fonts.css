@@ -1,0 +1,4 @@
+/* Optional. Loads the three faces from Google Fonts. Skip this file in apps that
+   load fonts another way (next/font, self-hosted) and set --hq-font-ui,
+   --hq-font-display and --hq-font-data yourself. */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Newsreader:opsz,wght@6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap");

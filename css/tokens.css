@@ -1,0 +1,321 @@
+/* Generated from tokens/tokens.json by scripts/build-tokens.mjs. Do not edit by hand. */
+/* hq-ui 0.1.0 */
+
+:root {
+  --hq-space-1: 4px;
+  --hq-space-2: 8px;
+  --hq-space-3: 12px;
+  --hq-space-4: 16px;
+  --hq-space-5: 24px;
+  --hq-space-6: 32px;
+  --hq-space-7: 48px;
+  --hq-space-8: 64px;
+  --hq-space-9: 96px;
+  --hq-radius-0: 0px;
+  --hq-radius-2: 2px;
+  --hq-radius-4: 4px;
+  --hq-radius-6: 6px;
+  --hq-radius-10: 10px;
+  --hq-radius-16: 16px;
+  --hq-text-10: 10px;
+  --hq-text-11: 11px;
+  --hq-text-12: 12px;
+  --hq-text-13: 13px;
+  --hq-text-14: 14px;
+  --hq-text-16: 16px;
+  --hq-text-18: 18px;
+  --hq-text-22: 22px;
+  --hq-text-24: 24px;
+  --hq-text-28: 28px;
+  --hq-text-30: 30px;
+  --hq-text-34: 34px;
+  --hq-weight-light: 300;
+  --hq-weight-regular: 400;
+  --hq-weight-medium: 500;
+  --hq-weight-semibold: 600;
+  --hq-leading-tight: 1.15;
+  --hq-leading-normal: 1.45;
+  --hq-leading-relaxed: 1.6;
+  --hq-duration-fast: 120ms;
+  --hq-duration-base: 200ms;
+  --hq-duration-slow: 320ms;
+  --hq-ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --hq-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --hq-border-width: 1px;
+  --hq-focus-width: 2px;
+  --hq-measure: 68ch;
+}
+
+/* Work: Worksheet */
+[data-theme="work"] {
+  --hq-font-display: "Newsreader", Georgia, serif;
+  --hq-font-ui: "Inter", system-ui, sans-serif;
+  --hq-font-data: "IBM Plex Mono", ui-monospace, monospace;
+  --hq-title-size: 30px;
+  --hq-title-weight: 400;
+  --hq-heading-size: 14px;
+  --hq-heading-weight: 600;
+  --hq-heading-color: var(--hq-text);
+  --hq-label-font: var(--hq-font-data);
+  --hq-label-size: 10px;
+  --hq-label-weight: 500;
+  --hq-label-tracking: 0.16em;
+  --hq-label-transform: uppercase;
+  --hq-stat-weight: 400;
+  --hq-radius-control: 2px;
+  --hq-radius-card: 2px;
+  --hq-radius-panel: 4px;
+  --hq-section-rule: 1px solid var(--hq-line-strong);
+  --hq-stat-rule: 1px solid var(--hq-line);
+  --hq-list-rule: 1px solid var(--hq-line);
+  --hq-table-rule: 1px solid var(--hq-line);
+  --hq-table-head-bg: var(--hq-surface);
+  --hq-row-h: 32px;
+  --hq-control-h: 32px;
+  --hq-control-pad-x: 12px;
+  --hq-card-pad: 16px;
+  --hq-gap: 16px;
+  --hq-section-gap: 24px;
+  --hq-page-pad: 24px;
+  --hq-text-body: 13px;
+  --hq-text-data: 12px;
+  --hq-text-stat: 24px;
+  --hq-bg: #F4EBDC;
+  --hq-surface: #EADFCA;
+  --hq-line: #D8C8AB;
+  --hq-line-strong: #2C2017;
+  --hq-text: #2C2017;
+  --hq-text-muted: #6B5845;
+  --hq-accent: #8A4A26;
+  --hq-accent-hover: #9D5830;
+  --hq-accent-press: #6F3A1C;
+  --hq-accent-wash: #EFDCC8;
+  --hq-on-accent: #F4EBDC;
+  --hq-focus: #8A4A26;
+  --hq-success: #35694B;
+  --hq-success-fill: #3F7D5A;
+  --hq-warning: #7F5710;
+  --hq-warning-fill: #B4802A;
+  --hq-danger: #9C4033;
+  --hq-danger-fill: #A94A3C;
+  --hq-chart-1: #3A3632;
+  --hq-chart-2: #8A4A26;
+  --hq-chart-3: #B9AF9F;
+  --hq-chart-4: #C79A63;
+  --hq-chart-5: #75624E;
+  --hq-chart-grid: #D8C8AB;
+  --hq-chart-axis: #2C2017;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  [data-theme="work"]:not([data-mode="light"]) {
+    --hq-bg: #1F150D;
+    --hq-surface: #2B1E13;
+    --hq-line: #43301F;
+    --hq-line-strong: #C2AD90;
+    --hq-text: #F8EEDC;
+    --hq-text-muted: #C2AD90;
+    --hq-accent: #E3A868;
+    --hq-accent-hover: #EDBA82;
+    --hq-accent-press: #D09450;
+    --hq-accent-wash: #3A2817;
+    --hq-on-accent: #1F150D;
+    --hq-focus: #E3A868;
+    --hq-success: #63A882;
+    --hq-success-fill: #63A882;
+    --hq-warning: #D9A94E;
+    --hq-warning-fill: #D9A94E;
+    --hq-danger: #D4776A;
+    --hq-danger-fill: #D4776A;
+    --hq-chart-1: #E8DFD0;
+    --hq-chart-2: #E3A868;
+    --hq-chart-3: #8C7A64;
+    --hq-chart-4: #B98A52;
+    --hq-chart-5: #6E655C;
+    --hq-chart-grid: #43301F;
+    --hq-chart-axis: #C2AD90;
+    color-scheme: dark;
+  }
+}
+[data-theme="work"][data-mode="dark"] {
+  --hq-bg: #1F150D;
+  --hq-surface: #2B1E13;
+  --hq-line: #43301F;
+  --hq-line-strong: #C2AD90;
+  --hq-text: #F8EEDC;
+  --hq-text-muted: #C2AD90;
+  --hq-accent: #E3A868;
+  --hq-accent-hover: #EDBA82;
+  --hq-accent-press: #D09450;
+  --hq-accent-wash: #3A2817;
+  --hq-on-accent: #1F150D;
+  --hq-focus: #E3A868;
+  --hq-success: #63A882;
+  --hq-success-fill: #63A882;
+  --hq-warning: #D9A94E;
+  --hq-warning-fill: #D9A94E;
+  --hq-danger: #D4776A;
+  --hq-danger-fill: #D4776A;
+  --hq-chart-1: #E8DFD0;
+  --hq-chart-2: #E3A868;
+  --hq-chart-3: #8C7A64;
+  --hq-chart-4: #B98A52;
+  --hq-chart-5: #6E655C;
+  --hq-chart-grid: #43301F;
+  --hq-chart-axis: #C2AD90;
+  color-scheme: dark;
+}
+
+/* Personal: Paper */
+[data-theme="personal"] {
+  --hq-font-display: "Inter", system-ui, sans-serif;
+  --hq-font-ui: "Inter", system-ui, sans-serif;
+  --hq-font-data: "Inter", system-ui, sans-serif;
+  --hq-title-size: 34px;
+  --hq-title-weight: 300;
+  --hq-heading-size: 14px;
+  --hq-heading-weight: 600;
+  --hq-heading-color: var(--hq-text-muted);
+  --hq-label-font: var(--hq-font-ui);
+  --hq-label-size: 14px;
+  --hq-label-weight: 400;
+  --hq-label-tracking: 0;
+  --hq-label-transform: none;
+  --hq-stat-weight: 300;
+  --hq-radius-control: 6px;
+  --hq-radius-card: 10px;
+  --hq-radius-panel: 16px;
+  --hq-section-rule: 0 solid transparent;
+  --hq-stat-rule: 0 solid transparent;
+  --hq-list-rule: 0 solid transparent;
+  --hq-table-rule: 1px solid var(--hq-line);
+  --hq-table-head-bg: transparent;
+  --hq-row-h: 48px;
+  --hq-control-h: 44px;
+  --hq-control-pad-x: 16px;
+  --hq-card-pad: 24px;
+  --hq-gap: 24px;
+  --hq-section-gap: 48px;
+  --hq-page-pad: 40px;
+  --hq-text-body: 16px;
+  --hq-text-data: 16px;
+  --hq-text-stat: 28px;
+  --hq-bg: #F5F6F3;
+  --hq-surface: #ECEEE9;
+  --hq-line: #DDE1DA;
+  --hq-line-strong: #AEB5AB;
+  --hq-text: #2A302C;
+  --hq-text-muted: #5C665F;
+  --hq-accent: #456650;
+  --hq-accent-hover: #3A5744;
+  --hq-accent-press: #2F4A39;
+  --hq-accent-wash: #E1E9E2;
+  --hq-on-accent: #F5F6F3;
+  --hq-focus: #456650;
+  --hq-success: #2F6B4A;
+  --hq-success-fill: #4D8A68;
+  --hq-warning: #7A5A12;
+  --hq-warning-fill: #B58A2C;
+  --hq-danger: #9A3A2E;
+  --hq-danger-fill: #B5574A;
+  --hq-chart-1: #456650;
+  --hq-chart-2: #5B728A;
+  --hq-chart-3: #A8BDAF;
+  --hq-chart-4: #B9C2CE;
+  --hq-chart-5: #2A302C;
+  --hq-chart-grid: #DDE1DA;
+  --hq-chart-axis: #AEB5AB;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  [data-theme="personal"]:not([data-mode="light"]) {
+    --hq-bg: #141816;
+    --hq-surface: #1C211E;
+    --hq-line: #2B322E;
+    --hq-line-strong: #4A544E;
+    --hq-text: #DDE3DE;
+    --hq-text-muted: #98A39C;
+    --hq-accent: #9CC0A8;
+    --hq-accent-hover: #B3D1BD;
+    --hq-accent-press: #86AB93;
+    --hq-accent-wash: #223028;
+    --hq-on-accent: #141816;
+    --hq-focus: #9CC0A8;
+    --hq-success: #8CC6A0;
+    --hq-success-fill: #8CC6A0;
+    --hq-warning: #D9B564;
+    --hq-warning-fill: #D9B564;
+    --hq-danger: #F0958B;
+    --hq-danger-fill: #F0958B;
+    --hq-chart-1: #9CC0A8;
+    --hq-chart-2: #9DB4CF;
+    --hq-chart-3: #5F7A69;
+    --hq-chart-4: #5A6B80;
+    --hq-chart-5: #DDE3DE;
+    --hq-chart-grid: #2B322E;
+    --hq-chart-axis: #4A544E;
+    color-scheme: dark;
+  }
+}
+[data-theme="personal"][data-mode="dark"] {
+  --hq-bg: #141816;
+  --hq-surface: #1C211E;
+  --hq-line: #2B322E;
+  --hq-line-strong: #4A544E;
+  --hq-text: #DDE3DE;
+  --hq-text-muted: #98A39C;
+  --hq-accent: #9CC0A8;
+  --hq-accent-hover: #B3D1BD;
+  --hq-accent-press: #86AB93;
+  --hq-accent-wash: #223028;
+  --hq-on-accent: #141816;
+  --hq-focus: #9CC0A8;
+  --hq-success: #8CC6A0;
+  --hq-success-fill: #8CC6A0;
+  --hq-warning: #D9B564;
+  --hq-warning-fill: #D9B564;
+  --hq-danger: #F0958B;
+  --hq-danger-fill: #F0958B;
+  --hq-chart-1: #9CC0A8;
+  --hq-chart-2: #9DB4CF;
+  --hq-chart-3: #5F7A69;
+  --hq-chart-4: #5A6B80;
+  --hq-chart-5: #DDE3DE;
+  --hq-chart-grid: #2B322E;
+  --hq-chart-axis: #4A544E;
+  color-scheme: dark;
+}
+
+[data-density="compact"] {
+  --hq-row-h: 32px;
+  --hq-control-h: 32px;
+  --hq-control-pad-x: 12px;
+  --hq-card-pad: 16px;
+  --hq-gap: 16px;
+  --hq-section-gap: 24px;
+  --hq-page-pad: 24px;
+  --hq-text-body: 13px;
+  --hq-text-data: 12px;
+  --hq-text-stat: 24px;
+}
+
+[data-density="comfortable"] {
+  --hq-row-h: 48px;
+  --hq-control-h: 44px;
+  --hq-control-pad-x: 16px;
+  --hq-card-pad: 24px;
+  --hq-gap: 24px;
+  --hq-section-gap: 48px;
+  --hq-page-pad: 40px;
+  --hq-text-body: 16px;
+  --hq-text-data: 16px;
+  --hq-text-stat: 28px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --hq-duration-fast: 0ms;
+    --hq-duration-base: 0ms;
+    --hq-duration-slow: 0ms;
+  }
+}

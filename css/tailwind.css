@@ -1,0 +1,33 @@
+/* Tailwind 4 bridge. Import after "tailwindcss" and tokens.css:
+     @import "tailwindcss";
+     @import "hq-ui/tokens.css";
+     @import "hq-ui/tailwind.css";
+   Gives utilities such as bg-hq-bg, text-hq-muted, border-hq-line, rounded-hq-card,
+   font-hq-data. They follow whichever theme, mode and density is active. */
+@theme inline {
+  --color-hq-bg: var(--hq-bg);
+  --color-hq-surface: var(--hq-surface);
+  --color-hq-line: var(--hq-line);
+  --color-hq-line-strong: var(--hq-line-strong);
+  --color-hq-text: var(--hq-text);
+  --color-hq-muted: var(--hq-text-muted);
+  --color-hq-accent: var(--hq-accent);
+  --color-hq-accent-wash: var(--hq-accent-wash);
+  --color-hq-on-accent: var(--hq-on-accent);
+  --color-hq-success: var(--hq-success);
+  --color-hq-warning: var(--hq-warning);
+  --color-hq-danger: var(--hq-danger);
+  --color-hq-chart-1: var(--hq-chart-1);
+  --color-hq-chart-2: var(--hq-chart-2);
+  --color-hq-chart-3: var(--hq-chart-3);
+  --color-hq-chart-4: var(--hq-chart-4);
+  --color-hq-chart-5: var(--hq-chart-5);
+
+  --font-hq-display: var(--hq-font-display);
+  --font-hq-ui: var(--hq-font-ui);
+  --font-hq-data: var(--hq-font-data);
+
+  --radius-hq-control: var(--hq-radius-control);
+  --radius-hq-card: var(--hq-radius-card);
+  --radius-hq-panel: var(--hq-radius-panel);
+}

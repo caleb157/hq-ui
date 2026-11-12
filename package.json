@@ -1,0 +1,41 @@
+{
+  "name": "hq-ui",
+  "version": "0.1.0",
+  "description": "Design tokens and a small React component library for internal tools. Two themes, Work and Personal, on one foundation.",
+  "private": true,
+  "type": "module",
+  "sideEffects": ["*.css"],
+  "files": ["dist", "css", "tokens"],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" },
+    "./tokens.css": "./css/tokens.css",
+    "./components.css": "./css/components.css",
+    "./fonts.css": "./css/fonts.css",
+    "./tailwind.css": "./css/tailwind.css",
+    "./shadcn.css": "./css/shadcn.css",
+    "./tokens.json": "./tokens/tokens.json"
+  },
+  "scripts": {
+    "tokens": "node scripts/build-tokens.mjs --strict",
+    "build": "npm run tokens && tsc -p tsconfig.build.json",
+    "dev": "npm run tokens && vite",
+    "styleguide": "npm run tokens && vite build",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vitejs/plugin-react": "^5",
+    "react": "^19",
+    "react-dom": "^19",
+    "recharts": "^3",
+    "typescript": "^5",
+    "vite": "^7"
+  }
+}

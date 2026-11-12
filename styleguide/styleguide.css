@@ -1,0 +1,21 @@
+/* Layout for the style guide page only. Not shipped in the package. */
+html { min-height: 100%; }
+.sg-page { max-width: 1200px; margin: 0 auto; }
+.sg-controls { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 220px)); gap: var(--hq-gap); }
+.sg-lede { margin: var(--hq-space-2) 0 0; max-width: var(--hq-measure); color: var(--hq-text-muted); }
+.sg-group { margin: var(--hq-space-4) 0 var(--hq-space-2); font-size: var(--hq-text-12); font-weight: var(--hq-weight-regular); }
+.sg-swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: var(--hq-space-3); }
+.sg-swatch__chip { height: 48px; border: var(--hq-border-width) solid var(--hq-line); border-radius: var(--hq-radius-control); }
+.sg-swatch__name { font-size: var(--hq-text-12); margin-top: var(--hq-space-1); }
+.sg-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--hq-section-gap); }
+.sg-grid > * { min-width: 0; }
+.sg-row { display: flex; flex-wrap: wrap; align-items: flex-end; gap: var(--hq-space-4); }
+.sg-bar { height: 12px; background: var(--hq-chart-1); }
+.sg-radius { width: 56px; height: 56px; border: var(--hq-border-width) solid var(--hq-line-strong); background: var(--hq-surface); }
+.sg-track { height: 20px; background: var(--hq-surface); position: relative; margin-top: var(--hq-space-1); }
+.sg-dot { position: absolute; top: 2px; left: 2px; width: 16px; height: 16px; background: var(--hq-accent); border-radius: var(--hq-radius-control); transition-property: left; transition-timing-function: var(--hq-ease-standard); }
+.sg-dot[data-on="true"] { left: calc(100% - 18px); }
+.sg-form { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--hq-gap); align-items: start; }
+.sg-body { max-width: var(--hq-measure); margin: 0; }
+.sg-big { font-size: var(--hq-text-18); }
+.sg-temp { font-family: var(--hq-font-display); font-weight: var(--hq-title-weight); font-size: 56px; line-height: 1.1; }
